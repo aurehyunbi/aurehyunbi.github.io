@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aurehyunbi</title>
+    <!-- Add your CSS stylesheets here -->
+    <style>
+		@font-face {
+            font-family: 'CustomFont';
+            src: url('SFProDisplay-Regular.ttf') format('truetype');
+            /* Add other font formats if needed (e.g., 'ttf', 'eot') */
+        }
+        body {
+            font-family: CustomFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2ECE8;
+        }
+
+        header {
+			position: relative;
+			height: 800px;
+			background-color: #97867A; /* Replace with your desired color */
+			color: #fff;
+			display: flex;
+			align-items: flex-start; /* Align items to the top */
+			justify-content: space-between;  */Create space between title and other content */
+			padding: 20px; /* Add padding for better spacing */
+		}
+
+        header h1 {
+            font-size: 1em;
+            margin: 10px 0 0 15px;
+        }
+		
+		header p {
+            font-size: 1.2em;
+            margin: 40px 1200px 0 200px; /* Adjust top margin to create spacing */
+			text-align: justify;
+		}
+			
+		.title-in-paragraph {
+            font-size: 1.5em; /* Adjust the font size for the title within the paragraph */
+            font-weight: bold; /* Make the title within the paragraph bold */
+			margin: 130px 1200px 0 200px;
+        }
+        
+		.floating-image {
+            position: absolute;
+            top: 140px; /* Adjust the top position as needed */
+            left: auto; /* Adjust the left position as needed */
+			right: 200px;
+            max-width: 800px; /* Adjust the maximum width as needed */
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+        }
+		
+		.product img {
+            width: 100%; /* Set the width to 100% for responsiveness */
+            max-width: 800px; /* Set the maximum width as needed */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra spacing around the image */
+            margin: 0 0; /* Center the image within its container */
+        }
+		
+		.product-info {
+			flex: 1; /* Flex grow property to make the text take remaining space */
+			margin: 5px 10px;
+			padding: 0 10px; /* Add some padding for spacing between image and text */
+		}
+		
+		.product h2,
+		.product p {
+			margin: 50px 0 0 0; /* Remove default margin for better styling */
+			font-size: 1.2em;
+		}
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+			align-items: flex-start;
+        }
+		
+		footer p {
+			margin: 50px 50 0 0;
+		}
+		
+		.italic-text {
+            font-style: italic;
+        }
+		
+		.hyperlink-text a {
+            color: #EA6C16; /* Set the color for the hyperlink */
+            text-decoration: underline; /* Add underline to the hyperlink */
+			font-style: bold;
+        }
+		
+    </style>
+</head>
+<body>
+    <header>
+		<div>
+			<img src="IMG_9290.jpeg" alt="Floating Image" class="floating-image">
+			<h1>aurehyunbi</h1>
+			<p class="title-in-paragraph">Home-made stickers</p>
+			<p>Hi, this is a website I made to showcase my stickers sheet. I don't really know how to do a real shopping website so for any inquiry please <span class="hyperlink-text"><a href="https://linktr.ee/aurehyunbi" target="_blank">contact me</a></span> either on social medias or by email.<p>
+			<p>Prices can vary with the number of sheets you want. If you take more than one it's less expensive to produce and send so the cost goes down.
+			<p> All of these are made entirely by me from drawing to the final result. I draw them, print them, and cut them (with a machine) and I'll send them to you if you want some.
+		</div>
+			
+    </header>
+
+    <section>
+        <div class="product">
+			<img src="penguins.jpeg" alt="penguins">
+			<div class=product-info>
+			<h2>Penguins</h2>  
+			<p>Five different species of penguins: African, Adélie, Chinstrap, Gentoo and Emperor penguins. Dimensions are around 15.5 by 6.5 cm</p>
+            <p>Base price: €9.00</p>
+			</div>
+			
+        </div>
+
+        <div class="product">
+            <img src="zoo.jpeg" alt="zooplankton">
+			<div class=product-info>
+			<h2>Zooplankton</h2>  
+			<p>Your favourite sea critters, featuring a copepod, <span class="italic-text">cavolinia inflexia</span>, a water flea, a zoe larva, an appendicularian and an amphipod. Dimensions are 8.5 by 6.5 cm. A small sheet for very small animals..</p>
+            <p>Base price: €7.00</p>
+			</div>
+        </div>
+		
+		<div class="product">
+			<img src="seabirds.jpeg" alt="seabirds">
+			<div class=product-info>
+			<h2>Seabirds</h2>  
+			<p>Three species of seabirds soaring through the skies. There's a yellow-legged gull, a common murre, a black-legged kittiwake, a Manx shearwater and they get a fish as special treat. Dimensions are around 16.5 by 11.5 cm.</p>
+            <p>Base price: €10.00</p>
+			</div>
+			
+        </div>
+		
+		<div class="product">
+			<img src="bioac.jpeg" alt="bioac">
+			<div class=product-info>
+			<h2>Bioacoustics</h2>  
+			<p>These are subject species of research on bioacoustics in the lab I made my masters thesis in. Most species can be observed in South Africa. There's a humpback whale, a southern ground hornbill, an African penguin, a Cape gannet, a Cape fur seal and a green sea turtle. Dimensions are around 8.5 by 8.5 cm.</p>
+            <p>Base price: €8.00</p>
+			</div>
+			
+        </div>
+		
+		<div class="product">
+			<img src="NAbirds.jpeg" alt="NAbirds">
+			<div class=product-info>
+			<h2>North-American Birds</h2>  
+			<p>Some species of birds I ringed in Canada with the OOR. Two kinglets, two chickadess, two sparrows, a junco, a vireo and a jay. There's a weird bird as well. The only 100% non-ocean-related sticker sheet. Dimensions are around 11.5 by 11.5 cm.</p>
+            <p>Base price: €10.00</p>
+			</div>
+			
+        </div>
+		
+		<div class="product">
+			<img src="mix.jpeg" alt="mix">
+			<div class=product-info>
+			<h2>Ocean Frenzy</h2>  
+			<p>A mix of different little drawings I made centered around the ocean (surprising theme), initially put together for a pencil case for Laura. There's a whale, a vaquita, a manta ray, a crab, some seabirds and some unidentifiable creatures. There's a lot of stickers on this one ! Dimensions are around 15.5 by 8.5 cm.</p>
+            <p>Base price: €10.00</p>
+			</div>
+			
+        </div>
+		
+		<div class="product">
+			<img src="bw.jpeg" alt="mix">
+			<div class=product-info>
+			<h2>Black and White</h2>  
+			<p>5 small black and white stickers with very different themes. There's still a fish and crab so its still a little ocean related. Dimensions are around 8.5 by 8.5 cm.</p>
+            <p>Base price: €10.00</p>
+			</div>
+			
+        </div>
+
+
+        <!-- Add more product entries as needed -->
+    </section>
+
+    <footer>
+	
+        <p>&copy; 2024 aurehyunbi. All rights reserved.</p>
+    </footer>
+</body>
+</html>	
