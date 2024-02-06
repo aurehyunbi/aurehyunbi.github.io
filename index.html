@@ -9,7 +9,7 @@
     <style>
         @font-face {
             font-family: 'CustomFont';
-            src: url('SFProDisplay-Regular.ttf') format('truetype');
+            src: url('Halyard Display.ttf') format('truetype');
             /* Add other font formats if needed (e.g., 'ttf', 'eot') */
         }
 
@@ -21,6 +21,7 @@
         }
 
         header {
+			font-family: CustomFont, sans-serif;
             position: relative;
             height: 800px;
             background-color: #97867A; /* Replace with your desired color */
@@ -32,20 +33,19 @@
         }
 
         header h1 {
-            font-size: 1em;
+            font-size: 20px;
             margin: 10px 0 10px 15px;
-		text-align: start;
+			text-align: start;
         }
 
         header p {
-            font-size: 1.2em;
+            font-size: 20px;
             margin: 40px 1200px 0 200px; /* Adjust top margin to create spacing */
             text-align: justify;
         }
 
         .title-in-paragraph {
-            font-size: 1.5em; /* Adjust the font size for the title within the paragraph */
-            font-weight: bold; /* Make the title within the paragraph bold */
+            font-size: 24px; /* Adjust the font size for the title within the paragraph */
             margin: 130px 1200px 0 200px;
         }
 
@@ -82,10 +82,13 @@
             padding: 0 10px; /* Add some padding for spacing between image and text */
         }
 
-        .product h2,
+        .product h2 {
+			font-size: 24px;
+			font-weight: 100;
+			}
         .product p {
             margin: 50px 0 0 0; /* Remove default margin for better styling */
-            font-size: 1.2em;
+            font-size: 20px;
         }
 
         footer {
@@ -104,7 +107,7 @@
         }
 
         .hyperlink-text a {
-            color: #EA6C16; /* Set the color for the hyperlink */
+            color: #fff; /* Set the color for the hyperlink */
             text-decoration: underline; /* Add underline to the hyperlink */
             font-style: bold;
         }
