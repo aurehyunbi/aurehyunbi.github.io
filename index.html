@@ -29,24 +29,38 @@
             display: flex;
             align-items: flex-start; /* Align items to the top */
             justify-content: space-between; /* Create space between title and other content */
-            padding: 20px; /* Add padding for better spacing */
+            padding: 0px; /* Add padding for better spacing */
+			flex-direction: row;
+
         }
 
-        header h1 {
+        header h1 {			
             font-size: 20px;
-            margin: 0 0 10px 15px;
-			text-align: start;
+			margin-left: 15px;
+			
+			
         }
+		
+		header img{
+			width: 100%;
+			max-width: 800px;
+			height: auto; /* Maintain aspect ratio */
+            display: flex; /* Remove any extra spacing around the image */
+			margin: 50px 50px 0 0; 
+			padding: 50px;
+			}
 
         header p {
             font-size: 20px;
-            margin: 40px 1200px 0 200px; /* Adjust top margin to create spacing */
+            margin: 40px 0 0 0px; /* Adjust top margin to create spacing */
             text-align: justify;
+			max-width: 400px;
         }
 
         .title-in-paragraph {
             font-size: 24px; /* Adjust the font size for the title within the paragraph */
-            margin: 130px 1200px 0 200px;
+			margin: 200px 0 0 0;
+            
         }
 
         .floating-image {
@@ -131,7 +145,81 @@
             text-decoration: underline; /* Add underline to the hyperlink */
             font-style: bold;
         }
+		
+		
+		.container {
+			display: flex;
+			align-items: center; /* Center items vertically */
+			width: 100%; /* Ensure the container spans the header */
+			max-width: 1200px; /* Set a maximum width for the container */
+			margin: 0 auto; /* Center the container horizontally */
+			padding: 20px; /* Add padding for spacing */
+		}
+
+		.text-container {
+			flex: 1; /* Expand to fill available space */
+			padding: 20px; /* Add padding for spacing */
+		}
+
+		.image-container {
+			margin-left: 20px; /* Add margin for spacing */
+		}
+
+		.image-container img {
+			max-width: 100%; /* Ensure image does not exceed container width */
+		}
         		/* Media query for smaller screens */
+				
+				@media screen and (max-width: 1400px) {
+		/* Adjustments for header */
+		header {
+			height: auto; /* Allow header height to adjust based on content */
+			flex-direction: column; /* Stack header elements vertically */
+			align-items: center; /* Center header content horizontally */
+			text-align: center; /* Center text within the header */
+		}
+
+		header h1 {
+			margin-top: 20px; /* Add margin to the top of the heading */
+		}
+
+		header p {
+			margin: 20px; /* Add margin to all sides of the paragraphs */
+		}
+		
+		.title-in-paragraph {
+			margin: 20px; /* Add margin to the title within the paragraph */
+		}
+
+		/* Adjustments for floating image */
+		.floating-image {
+			max-width: 80%; /* Ensure image width spans the container */
+			margin: 50px;
+			
+		}
+
+		/* Adjustments for product layout */
+		.product {
+			flex-direction: column; /* Stack product elements vertically */
+		}
+
+		.product img {
+			max-width: 100%; /* Ensure images span the container */
+		}
+
+		/* Adjustments for footer */
+		footer p {
+			margin: 20px; /* Add margin to all sides of the footer paragraph */
+		}
+		
+		
+		 .container {
+			flex-direction: column; /* Stack container elements vertically */
+		}
+		
+
+	}
+
 		@media screen and (max-width: 768px) {
 		header {
 			height: auto;
@@ -169,19 +257,25 @@
 		footer p {
 			margin: 20px;
 		}
+		 .container {
+		flex-direction: column; /* Stack container elements vertically */
+		}
 
     </style>
 </head>
 <body>
     <header>
-        <div>
+        
 		<h1>aurehyunbi</h1>
-            <img src="IMG_9290.jpeg" alt="Floating Image" class="floating-image">
-            <p class="title-in-paragraph">Home-made stickers</p>
+		<div>
+			
+			<p class="title-in-paragraph">Home-made stickers</p>
             <p>Hi, this is a website I made to showcase my sticker sheets. I don't really know how to do a real shopping website so for any inquiry please <span class="hyperlink-text"><a href="https://linktr.ee/aurehyunbi" target="_blank">contact me</a></span> either on social medias or by email.</p>
             <p>Prices can vary with the number of sheets you want. If you take more than one it's less expensive to produce and send, so the cost goes down.</p>
             <p>All of these are made entirely by me from drawing to the final result. I draw them, print them, and cut them (with a machine) and I'll send them to you if you want some.</p>
-        </div>
+		</div>
+			<img class="header" src="IMG_9290.jpeg" alt="cover">
+		
 		<a class="contact-button" href="https://linktr.ee/aurehyunbi" target="_blank">Contact me</a>
     </header>
 
