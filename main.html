@@ -86,15 +86,13 @@
 			color: #0B0B0B;
 			margin-bottom: 10px;
 		}
-		
+		.cover h2 {
+			font-size: 2em;
+			color: #fffade;
+			}
 		.cover p {
 			font-size: 1.5em;
 			color: #212427;
-			}
-
-	    	.cover h2 {
-			font-size: 2em;
-			color: #fffade;
 			}
 			
 		/* Product grid */
@@ -142,6 +140,9 @@
 		
 		/* Responsive adjustments */
 		@media (max-width: 1024px) {
+			.cover-image {
+			background-size: 80%;
+			}
 			.product-grid {
 				grid-template-columns: repeat(3, 1fr);
 			}.cover h1 {
@@ -152,6 +153,9 @@
 			}
 		}
 		@media (max-width: 768px) {
+			.cover-image {
+				background-size: 90%;
+				}
 			.product-grid {
 				grid-template-columns: repeat(2, 1fr);
 			}
@@ -163,6 +167,9 @@
 			}
 		}
 		@media (max-width: 500px) {
+			.cover-image {
+				background-size: 100%;
+				}
 			.product-grid {
 				grid-template-columns: 1fr;
 			}
