@@ -18,9 +18,15 @@
             margin: 0;
             padding: 0;
             background-color: #fff;
-	    overflow-x: hidden;
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
         }
-		
+		* {
+			box-sizing: border-box; /* Include padding and border in element width/height */
+		}
+
 		.back-link {
 			position: absolute; /* Position the link relative to the header */
 			right: 20px; /* Adjusts the right position */			
@@ -69,14 +75,15 @@
 			align-items: center;
 			padding: 60px 20px;
 			text-align: center;
-			max-height: 600px;
+			max-height: auto;
+
 		}
 		.cover-image {
-			width: 100vw;
-			height: 60vh; /* Set desired height for the image area */
+			width: 99vw;
+			height: 45vh; /* Set desired height for the image area */
 			background: url('b_littlefriends.png') no-repeat  center;
 			background-size: 70%;
-			padding: 20px;
+			
 		}
 		
 		.cover-text {
@@ -148,6 +155,7 @@
 			padding: 50px 20px;
 			}
 			.cover-image {
+			width: 95vw;
 			background-size: 80%;
 			}
 			.product-grid {
@@ -169,6 +177,7 @@
 				max-height: 550px;
 			}
 			.cover-image {
+				width: 95vw;
 				background-size: 90%;
 				}
 			.product-grid {
@@ -186,11 +195,13 @@
 		}
 		@media (max-width: 500px) {
 			.cover{
-				padding: 20px 20px;
+				padding: 30px 0px;
 				max-height: 500px;
 			}
 			.cover-image {
-				background-size: 99%;
+				width: 95vw;
+				background-size: 90%;
+				padding: 0px;
 				}
 			.product-grid {
 				grid-template-columns: 1fr;
@@ -205,16 +216,7 @@
 				font-size: 1.5em;
 			}
     }
-			/* Responsive adjustments */
-		@media (max-width: 768px) {
-			.product-container {
-				flex-direction: column;
-				text-align: center;
-			}
-			.product-image {
-				margin-right: 0;
-				margin-bottom: 20px;
-			}
+
 		}
     </style>
 </head>
