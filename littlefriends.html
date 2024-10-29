@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aurehyunbi</title>
+	<link rel="icon" href="favicon.png" type="image/png">
+    <!-- Add your CSS stylesheets here -->
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('Syne-VariableFont_wght.ttf') format('truetype');
+            /* Add other font formats if needed (e.g., 'ttf', 'eot') */
+        }
+
+        body {
+            font-family: CustomFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F9F9F9;
+        }
+
+        header {
+			font-family: CustomFont, sans-serif;
+            height: 80px;
+            background-color: #5c84b1; /* Replace with your desired color */
+            color: #fff;
+            display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			position: relative;
+			
+
+        }
+
+        header h1 {			
+            font-size: 30px;
+			color: #fff7d0;
+			flex-grow: 1; /* Allow the title to take remaining space */
+			text-align: center; /* Center the title text */
+			
+			
+        }
+		
+        header p {
+            font-size: 20px;
+            margin: 40px 0 0 0px; /* Adjust top margin to create spacing */
+            text-align: justify;
+			max-width: 400px;
+        }
+		
+		.back-link {
+			position: absolute; /* Position the link relative to the header */
+			left: 20px; /* Adjusts the left position */			
+			color: #fffade; /* Link color */
+			text-decoration: none; /* Remove underline */
+			font-size: 1.5em; /* Font size */
+		}
+
+		.back-link:hover {
+			color: #ccc; /* Change color on hover */
+		}
+		
+		
+		/* Product container */
+		.product-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 1200px;
+			padding: 40px 20px;
+			margin: 20px auto;
+			text-align: left;
+		}
+
+		/* Image section */
+		.product-image {
+			width: 600px; /* Fixed width for image */
+			height: auto;
+			border-radius: 8px;
+			margin-right: 20px;
+		}
+
+		/* Text section */
+		.product-details {
+		max-width: 600px
+		}
+		.product-details h2 {
+			font-size: 2em;
+			margin-bottom: 10px;
+		}
+		.product-details p {
+			font-size: 1.1em;
+			color: #555;
+			text-align: justify;
+		}
+		
+		.product-details h3 {
+			font-size: 1.5em;
+		}
+
+		/* Centering layout */
+		.centered-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		
+		.order-button {
+			display: inline-block; /* Allows padding and margin to be applied */
+			background-color: #28a745; /* Button background color */
+			color: white; /* Button text color */
+			padding: 10px 15px; /* Button padding */
+			border: none; /* No border */
+			border-radius: 5px; /* Rounded corners */
+			text-decoration: none; /* Remove underline */
+			font-size: 1.2em; /* Font size */
+			margin-top: 15px; /* Space above the button */
+			transition: background-color 0.3s; /* Smooth transition for hover effect */
+		}
+
+		.order-button:hover {
+			background-color: #218838; /* Darker green on hover */
+		}
+
+		/* Footer */
+		footer {
+			padding: 20px;
+			text-align: center;
+			background-color: #191919;
+		}
+		
+		footer p {
+			font-size: 1em;
+			color: #d4d4d4;
+		}
+		 </style>
+</head>
+
+<body>
+    <header>
+        <a href="main.html" class="back-link">Back to Main Page</a>
+		<h1>aurehyunbi</h1>
+		
+    </header>
+	
+	  <!-- Product Content -->
+	<div class="product-container">
+		<img src="littlefriends.png" alt="littlefriends" class="product-image">
+		<div class="product-details">
+			<h2>Little Friends</h2>
+			<p>some little friends to stick to your belongings and put in your pocket</p>
+			<p> size is xx by xx.</p>
+			<h3> 8.99€ </h3>
+			
+			<!-- Order Button -->
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdP5N6w4OGrgyXnxBffDn5o5iISPr9Eh8QZ4i8mem_WbvvTtg/viewform?usp=sf_link" class="order-button" target="_blank">Order</a> <!-- External link -->
+		</div>
+	</div>
+
+    <footer>
+
+        <p>2024 aurehyunbi. All rights reserved :p</p>
+    </footer>
