@@ -1,2 +1,0 @@
-# aurehyunbi.github.io
-stickers
