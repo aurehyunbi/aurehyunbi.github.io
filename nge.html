@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aurehyunbi</title>
@@ -76,7 +76,7 @@
 
 		/* Image section */
 		.product-image {
-			width: 600px; /* Fixed width for image */
+			width: 30%; /* Fixed width for image */
 			height: auto;
 			border-radius: 8px;
 			margin-right: 20px;
@@ -99,14 +99,6 @@
 		.product-details h3 {
 			font-size: 1.5em;
 		}
-
-		/* Centering layout */
-		.centered-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-		}
 		.order-button {
 			display: inline-block; /* Allows padding and margin to be applied */
 			background-color: #28a745; /* Button background color */
@@ -123,6 +115,14 @@
 		.order-button:hover {
 			background-color: #218838; /* Darker green on hover */
 		}
+		/* Centering layout */
+		.centered-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
 		/* Footer */
 		footer {
 			padding: 20px;
@@ -141,10 +141,18 @@
 				text-align: center;
 			}
 			.product-image {
+				width: 80%; /* Make the image take full width */
 				margin-right: 0;
 				margin-bottom: 20px;
 			}
 		}
+		@media (max-width: 480px) {
+			.product-image {
+				width: 100%; /* Make the image take full width */
+				max-width: 300px; /* Remove max-width constraint */
+				max-height: 100px; /* Set a maximum height to prevent overflow */
+				object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+			}
 		 </style>
 </head>
 
@@ -161,7 +169,7 @@
 		<div class="product-details">
 			<h2>nge</h2>
 			<p>stickers of the silly guys from eva, they're all mentally healthy</p>
-			<p>size is xx by xx.</p>
+			<p>size is 8.5cm by 10cm.</p>
 			<h3>8.99€</h3>
 			
 			<!-- Order Button -->
