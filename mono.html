@@ -7,6 +7,11 @@
 	<link rel="icon" href="favicon.png" type="image/png">
     <!-- Add your CSS stylesheets here -->
     <style>
+		a:link, a:visited{
+			text-decoration: none!important;
+			cursor: pointer;
+			color:#fff7d0;
+		}
         @font-face {
             font-family: 'CustomFont';
             src: url('Syne-VariableFont_wght.ttf') format('truetype');
@@ -30,6 +35,7 @@
 			align-items: center;
 			width: 100%;
 			position: relative;
+			text-decoration: none;
 			
 
         }
@@ -39,9 +45,8 @@
 			color: #fff7d0;
 			flex-grow: 1; /* Allow the title to take remaining space */
 			text-align: center; /* Center the title text */
-			
-			
-        }
+			text-decoration: none;
+			}
 		
         header p {
             font-size: 20px;
@@ -158,11 +163,11 @@
 
 <body>
     <header>
-        <a href="main.html" class="back-link">main</a>
-		<h1>aurehyunbi</h1>
+		<h1><a href="main.html">aurehyunbi</a></h1>
 		
     </header>
-	
+
+
 	  <!-- Product Content -->
 	<div class="product-container">
 		<img src="mononoke.png" alt="mononoke" class="product-image">
